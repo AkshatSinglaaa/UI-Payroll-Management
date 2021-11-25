@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.empController">
+   <bottom>
+      <HBox spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#insertEmployee" text="Insert Employee" />
+            <Button mnemonicParsing="false" text="Remove" />
+            <Region prefHeight="31.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+            <Button mnemonicParsing="false" onAction="#gotoMenu" text="Go Back" HBox.hgrow="ALWAYS" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <top>
+      <Label text="EMPLOYEE TABLE" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="Bodoni MT Bold" size="27.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <ScrollPane prefHeight="295.0" prefWidth="910.0" BorderPane.alignment="CENTER">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TableView prefHeight="290.0" prefWidth="977.0">
+                     <columns>
+                        <TableColumn prefWidth="75.0" text="ID" />
+                        <TableColumn prefWidth="75.0" text="FName" />
+                        <TableColumn prefWidth="75.0" text="LName" />
+                        <TableColumn prefWidth="75.0" text="Gender" />
+                        <TableColumn prefWidth="75.0" text="Phone" />
+                        <TableColumn prefWidth="75.0" text="Email" />
+                        <TableColumn prefWidth="75.0" text="Address" />
+                        <TableColumn prefWidth="95.0" text="Postal Code" />
+                        <TableColumn prefWidth="120.0" text="Marital Status" />
+                        <TableColumn prefWidth="120.0" text="Department" />
+                        <TableColumn prefWidth="120.0" text="Position" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>
